@@ -1,8 +1,9 @@
 const colors = {
   primary: "#FFC529",
   secondary: "#FD7A50",
-  write: "#FFFFFF",
-  back: "#201F1D",
+  white: "#FFFFFF",
+  black: "#201F1D",
+  gray: "#0B2135",
 };
 
 const sizes = {
@@ -21,16 +22,24 @@ const sizes = {
 const fonts = {
   h1: {
     fontSize: sizes.h1,
+    color: colors.black,
+    lineHeight: 26,
+    fontFamily: "Gilroy-Medium",
   },
   h2: {
     fontSize: sizes.h2,
-  },
-  body: {
-    fontSize: sizes.body,
+    color: colors.black,
+    fontFamily: "Gilroy-Medium",
+    lineHeight: 21,
   },
   caption: {
     fontSize: sizes.caption,
+    fontFamily: "Gilroy-Regular",
+  },
+  body: {
+    fontSize: sizes.body,
+    fontFamily: "Gilroy-Medium",
   },
 };
 
-export { colors, sizes, font };
+export { colors, sizes, fonts };
